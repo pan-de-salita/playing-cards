@@ -30,7 +30,7 @@ function arrangeDeckBySuit(deck, suits) {
 
 function arrangeDeckByRank(deck, ranks) {
   const deckArrangedByRank = Array(ranks.length).fill();
-  return deckArrangedByRank.map((subOrder, i) => deck.filter(card => card.slice(1) === ranks[i])).flat();
+  return deckArrangedByRank.map((rank, i) => deck.filter(card => card.slice(1) === ranks[i])).flat();
 };
 
 function dealCard(deck, suits, ranks) {
