@@ -6,7 +6,7 @@ const deckArr = createDeck(suitsArr, ranksArr);
 const shuffledDeckArr = shuffleDeck(deckArr);
 
 function createDeck(suits, ranks) {
-  const deck = suits.map(suit => ranks.map(rank => suit + rank)).flat();
+  return suits.map(suit => ranks.map(rank => suit + rank)).flat();
 }
 
 function shuffleDeck(deck) {
