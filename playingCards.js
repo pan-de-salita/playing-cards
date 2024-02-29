@@ -1,9 +1,9 @@
 const suitsArr = ['♡', '♢', '♣', '♠'];
 const ranksArr = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-const suitsAsWords = ['hearts', 'diamonds', 'clubs', 'spades'];
-const ranksAsWords = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king'];
+const suitsAsWordsArr = ['hearts', 'diamonds', 'clubs', 'spades'];
+const ranksAsWordsArr = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king'];
 const deckArr = createDeck(suitsArr, ranksArr);
-const shuffledDeck = shuffleDeck(createDeck(suitsArr, ranksArr));
+const shuffledDeckArr = shuffleDeck(deckArr);
 
 function createDeck(suits, ranks) {
   const deck = suits.map(suit => ranks.map(rank => suit + rank)).flat();
